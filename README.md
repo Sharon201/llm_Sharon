@@ -19,4 +19,12 @@ $ ollama serve
 en la pagina de [modelos](https://ollama.com/library) de Ollama se busca el modelo deseado y de descarga con el siguiente comando:
 ````bash
 $ Ollama pull tinyllama
+ 
+ ## 4 Prueba  de request o la API rest
+ Para realizar un peticion basica a la API de ollama se sigue la siguiente estructura
+ ````bash
+ curl -X http://localhost:11434/api/generate -d '{
+  "model": "tynallama",
+  "prompt": "Why is the sky blue?"
+}'
 ````
